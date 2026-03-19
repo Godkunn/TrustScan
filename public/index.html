@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrustScan | AI Image & Deepfake Detection</title>
+  <meta name="description" content="TrustScan detects AI-generated and manipulated media with a premium enterprise dashboard." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container-page navbar">
+      <a href="/" class="brand">
+        <img src="/assets/logo.png" alt="TrustScan logo" />
+        <div class="brand-text">
+          <div class="brand-title" style="color:#fff;">TrustScan</div>
+          <div class="brand-subtitle">AI Image & Deepfake Detection</div>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="nav-signin" class="btn btn-soft hide-mobile">Sign In</button>
+        <a href="/dashboard.html" class="btn btn-primary hide-mobile">Open Dashboard</a>
+        <button id="mobile-menu-button" class="menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="container-page mobile-stack">
+        <a class="btn btn-soft" href="#features">Features</a>
+        <a class="btn btn-soft" href="#workflow">Workflow</a>
+        <a class="btn btn-soft" href="#pricing">Pricing</a>
+        <a class="btn btn-soft" href="#faq">FAQ</a>
+        <a class="btn btn-soft" href="/contact.html">Contact</a>
+        <button id="mobile-signin" class="btn btn-soft">Sign In</button>
+        <a href="/dashboard.html" class="btn btn-primary">Open Dashboard</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="glow-orb left"></div>
+      <div class="glow-orb right"></div>
+
+      <div class="container-page hero-layout">
+        <div class="animate-fade-up">
+          <div class="kicker">
+            <span class="kicker-dot"></span>
+            Enterprise-ready. Backend-ready. Beautiful by default.
+          </div>
+
+          <h1>
+            The enterprise standard for
+            <span class="gradient-text">AI image & deepfake</span>
+            detection.
+          </h1>
+
+          <p>
+            TrustScan helps teams detect AI-generated media, manipulated images, and suspicious content with a polished dashboard, modern workflows, and a future-proof codebase for your backend.
+          </p>
+
+          <div class="hero-cta">
+            <button id="analyze-btn" class="btn btn-primary">Open Product Demo</button>
+            <button id="open-lead-cta" class="btn btn-outline">Join Waitlist</button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>99.9%</strong>
+              <span>Target accuracy</span>
+            </div>
+            <div class="stat-card">
+              <strong>&lt;1s</strong>
+              <span>Fast analysis</span>
+            </div>
+            <div class="stat-card">
+              <strong>API</strong>
+              <span>Backend ready</span>
+            </div>
+            <div class="stat-card">
+              <strong>UI</strong>
+              <span>Responsive SaaS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual animate-fade-up">
+          <div class="visual-floating-card left floating-slow">
+            <strong>AI GENERATED</strong>
+            <span>Probability: 98%</span>
+          </div>
+
+          <div class="visual-floating-card right floating">
+            <strong>HEATMAP</strong>
+            <span>Tamper zone detected</span>
+          </div>
+
+          <div class="visual-shell">
+            <div class="visual-top">
+              <div>
+                <div class="brand-subtitle" style="color:#64748b;">TrustScan Overview</div>
+                <div class="visual-title">Detection pipeline</div>
+              </div>
+              <div class="live-pill">Live</div>
+            </div>
+
+            <div class="visual-grid">
+              <div class="scan-panel">
+                <div class="scan-panel-header">
+                  <span>Image analysis</span>
+                  <span>Score 97.8%</span>
+                </div>
+
+                <div class="scan-chips">
+                  <div class="chip">
+                    <small>AI artifact</small>
+                    <strong>High</strong>
+                  </div>
+                  <div class="chip">
+                    <small>Face mismatch</small>
+                    <strong>Strong</strong>
+                  </div>
+                  <div class="chip">
+                    <small>Metadata</small>
+                    <strong>Suspicious</strong>
+                  </div>
+                </div>
+
+                <div class="hero-graphic"></div>
+              </div>
+
+              <div class="result-box">
+                <div class="mini-card">
+                  <div class="label">Result</div>
+                  <div class="value">AI Generated</div>
+                  <div class="progress"><span></span></div>
+                  <div class="sub">Confidence: 98.2%</div>
+                </div>
+
+                <div class="mini-card">
+                  <div class="label">Scans remaining</div>
+                  <div class="value">19,850</div>
+                  <div class="sub">Enterprise plan</div>
+                </div>
+
+                <div class="mini-card">
+                  <div class="label">API status</div>
+                  <div class="value" style="font-size:1.12rem;">Ready</div>
+                  <div class="sub">Backend integration pending</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;">
+              <span class="badge" style="background:#e2e8f0; color:#334155;">Heatmaps</span>
+              <span class="badge" style="background:#e2e8f0; color:#334155;">Deepfake scan</span>
+              <span class="badge" style="background:#e2e8f0; color:#334155;">Dashboard</span>
+              <span class="badge" style="background:#e2e8f0; color:#334155;">Future API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container-page">
+        <div class="card" style="padding:24px;">
+          <div class="grid-4" style="text-align:center; font-weight:700; color:#475569;">
+            <div style="background:#f8fafc; border-radius:18px; padding:18px;">ISO / SOC / GDPR-ready design</div>
+            <div style="background:#f8fafc; border-radius:18px; padding:18px;">Works on desktop, tablet, and mobile</div>
+            <div style="background:#f8fafc; border-radius:18px; padding:18px;">Built to plug into Node / Express</div>
+            <div style="background:#f8fafc; border-radius:18px; padding:18px;">Scalable for image now, video later</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section white">
+      <div class="container-page">
+        <p class="section-kicker">What you get</p>
+        <h2 class="section-title" style="margin-top:10px; max-width:14ch;">A trust layer for modern AI risk workflows.</h2>
+        <p class="section-lead">
+          The interface is built to feel premium today and stay easy to extend when you wire in backend routes, model inference, and authenticated dashboards.
+        </p>
+
+        <div class="grid-4" style="margin-top:30px;">
+          <article class="feature-card">
+            <div class="feature-icon">◎</div>
+            <h3>Heatmap Analysis</h3>
+            <p>Highlight suspicious regions with a visual fraud map that makes results easy to understand at a glance.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">△</div>
+            <h3>AI Analysis</h3>
+            <p>Show probability, confidence, and reasons in a clean report format ready for enterprise review.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">▤</div>
+            <h3>User Dashboard</h3>
+            <p>Let users manage history, track scans, and copy API keys from a responsive portal.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">API</div>
+            <h3>API Ready</h3>
+            <p>The UI already anticipates backend endpoints, upload flow, auth, and scan results.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow" class="section ink">
+      <div class="container-page grid-2" style="align-items:center;">
+        <div>
+          <p class="section-kicker" style="color:#c7d2fe;">Workflow</p>
+          <h2 class="section-title" style="margin-top:10px; color:#fff;">Built to feel fast, clean, and production-ready.</h2>
+          <p class="section-lead" style="color:#94a3b8;">
+            This structure gives you room to add authenticated uploads, scan histories, model inference, and billing without rebuilding the interface later.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="workflow-card" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.10); color:#fff;">
+            <div class="workflow-step" style="color:#c7d2fe;">Step 01</div>
+            <h3 style="margin-top:10px; color:#fff;">Upload</h3>
+            <p style="color:#cbd5e1;">Drop an image, receipt, ID, or media file.</p>
+          </div>
+          <div class="workflow-card" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.10); color:#fff;">
+            <div class="workflow-step" style="color:#c7d2fe;">Step 02</div>
+            <h3 style="margin-top:10px; color:#fff;">Analyze</h3>
+            <p style="color:#cbd5e1;">Show results, confidence, and reasoning.</p>
+          </div>
+          <div class="workflow-card" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.10); color:#fff;">
+            <div class="workflow-step" style="color:#c7d2fe;">Step 03</div>
+            <h3 style="margin-top:10px; color:#fff;">Save</h3>
+            <p style="color:#cbd5e1;">Store history and let users revisit reports.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section white">
+      <div class="container-page">
+        <p class="section-kicker">Pricing</p>
+        <h2 class="section-title" style="margin-top:10px;">Simple tiers for landing pages, pilots, and production.</h2>
+
+        <div class="grid-3" style="margin-top:30px;">
+          <article class="pricing-card">
+            <div class="badge">Starter</div>
+            <div class="price">Free</div>
+            <p>Best for demos and early validation.</p>
+            <ul>
+              <li>• Basic dashboard</li>
+              <li>• Manual scan flow</li>
+              <li>• Future backend ready</li>
+            </ul>
+          </article>
+
+          <article class="pricing-card popular">
+            <div class="badge brand">Most Popular</div>
+            <h3 style="margin-top:16px;">Pro</h3>
+            <div class="price">$29 <span>/mo</span></div>
+            <p>For serious product pilots and teams.</p>
+            <ul>
+              <li>• Scan history</li>
+              <li>• API-ready UI</li>
+              <li>• Priority workflows</li>
+            </ul>
+          </article>
+
+          <article class="pricing-card">
+            <div class="badge">Enterprise</div>
+            <div class="price">Custom</div>
+            <p>For SaaS, security teams, and org-level deployments.</p>
+            <ul>
+              <li>• Auth integration</li>
+              <li>• Admin controls</li>
+              <li>• Model pipeline hooks</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section white">
+      <div class="container-page" style="max-width:980px;">
+        <p class="section-kicker">FAQ</p>
+        <h2 class="section-title" style="margin-top:10px;">Common questions</h2>
+
+        <div style="margin-top:24px; display:grid; gap:14px;">
+          <details class="faq-item">
+            <summary>How is TrustScan built for the backend?</summary>
+            <p>The UI uses stable IDs, clean layout sections, and a simple structure so your Express routes, auth, and scan APIs can be connected later without reworking the frontend.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can it handle mobile screens cleanly?</summary>
+            <p>Yes. Typography, spacing, grids, and controls scale from large displays to small phones using responsive CSS and careful layout choices.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Where should I place the logo?</summary>
+            <p>Put it at <code>public/assets/logo.png</code> so the frontend can use it consistently everywhere.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="container-page">
+        <div class="cta-band">
+          <h2 class="section-title" style="color:#fff; max-width:14ch;">Ready to turn TrustScan into a real product?</h2>
+          <p class="section-lead" style="color:#cbd5e1;">
+            The frontend is now structured for smooth backend integration, premium presentation, and fast future expansion.
+          </p>
+          <div class="hero-cta">
+            <a href="/dashboard.html" class="btn btn-primary">Open Dashboard</a>
+            <a href="/contact.html" class="btn btn-soft">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-page footer-row">
+      <div class="brand">
+        <img src="/assets/logo.png" alt="TrustScan logo" style="width:34px; height:34px; border-radius:12px;" />
+        <div style="color:#334155; font-weight:700;">© 2026 TrustScan. All rights reserved.</div>
+      </div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lead-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="brand" style="align-items:flex-start;">
+          <img src="/assets/logo.png" alt="TrustScan logo" style="width:48px; height:48px; border-radius:16px; object-fit:contain;" />
+          <div>
+            <h3 style="margin:0; font-size:1.8rem;">Join the TrustScan waitlist</h3>
+            <p style="margin:8px 0 0; color:#cbd5e1;">Get updates for advanced detection features and API access.</p>
+          </div>
+        </div>
+        <button id="close-lead" class="close-btn" aria-label="Close">✕</button>
+      </div>
+
+      <form id="subscribe-form" class="form-grid">
+        <div class="field">
+          <label>Company Name</label>
+          <input name="company_name" type="text" placeholder="Acme Inc." />
+        </div>
+        <div class="field">
+          <label>Work Email</label>
+          <input name="work_email" type="email" placeholder="you@company.com" required />
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; border-radius:18px;">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="login-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-card" style="max-width:460px;">
+      <div class="modal-header">
+        <div class="brand" style="align-items:flex-start;">
+          <img src="/assets/logo.png" alt="TrustScan logo" style="width:48px; height:48px; border-radius:16px; object-fit:contain;" />
+          <div>
+            <h3 style="margin:0; font-size:1.8rem;">Sign in to TrustScan</h3>
+            <p style="margin:8px 0 0; color:#cbd5e1;">Access your dashboard and scan history.</p>
+          </div>
+        </div>
+        <button id="close-login" class="close-btn" aria-label="Close">✕</button>
+      </div>
+
+      <div class="form-grid">
+        <button id="mock-google-login" class="btn btn-primary" style="width:100%; border-radius:18px;">Sign in with Google (demo)</button>
+        <button class="btn btn-soft" style="width:100%; border-radius:18px;">More sign in options</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

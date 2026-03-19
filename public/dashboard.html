@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrustScan | Dashboard</title>
+  <meta name="description" content="TrustScan enterprise dashboard for scan history, API key management, and analysis workflows." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div id="drawer-backdrop" class="drawer-backdrop"></div>
+
+  <div class="dashboard-layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-top">
+          <a href="/" class="brand">
+            <img src="/assets/logo.png" alt="TrustScan logo" />
+            <div class="brand-text">
+              <div class="brand-title" style="color:#fff;">TrustScan</div>
+              <div class="brand-subtitle">Enterprise portal</div>
+            </div>
+          </a>
+          <button id="close-sidebar" class="btn btn-soft mobile-sidebar-btn" style="padding:10px 12px;">✕</button>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="/dashboard.html" class="sidebar-link active">Overview</a>
+          <a href="#scan-history" class="sidebar-link">Scan History</a>
+          <a href="#api-management" class="sidebar-link">API Management</a>
+          <a href="#billing" class="sidebar-link">Billing & Subscription</a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div style="border-radius:22px; background:rgba(255,255,255,0.05); padding:16px;">
+            <div style="font-size:0.72rem; letter-spacing:0.22em; text-transform:uppercase; color:#94a3b8; font-weight:800;">Signed in as</div>
+            <div style="display:flex; gap:12px; align-items:center; margin-top:12px;">
+              <div style="width:44px; height:44px; border-radius:50%; display:grid; place-items:center; background:rgba(99,102,241,.2); color:#fff; font-weight:900;">G</div>
+              <div>
+                <div style="font-weight:800;">GodKun CEO</div>
+                <div style="color:#94a3b8; font-size:0.92rem;">ceo@trustscan.com</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="/" class="btn" style="width:100%; margin-top:14px; background:rgba(244,63,94,0.12); color:#fecdd3; border:1px solid rgba(244,63,94,0.18);">Logout</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-shell">
+      <header class="topbar">
+        <div class="container-page topbar-inner">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <button id="open-sidebar" class="btn btn-soft mobile-sidebar-btn" style="padding:10px 12px;">☰</button>
+            <div>
+              <div style="font-size:1.4rem; font-weight:900; letter-spacing:-0.04em;">Overview</div>
+              <div style="color:#64748b; font-size:0.92rem;">Manage scans, keys, and product growth.</div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+            <input class="search" type="search" placeholder="Search scans..." />
+            <button class="btn btn-soft" style="padding:12px 14px; border:1px solid #e2e8f0; background:#fff;">🔔</button>
+            <div style="display:flex; gap:12px; align-items:center; padding:12px 16px; border:1px solid #e2e8f0; background:#fff; border-radius:18px;">
+              <div style="width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:#e0e7ff; color:#4338ca; font-weight:900;">G</div>
+              <div>
+                <div style="font-size:0.96rem; font-weight:800;">GodKun CEO</div>
+                <div style="font-size:0.82rem; color:#64748b;">ceo@trustscan.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container-page dashboard-content">
+        <section class="dash-card animate-fade-up">
+          <div style="display:flex; justify-content:space-between; gap:18px; align-items:center; flex-wrap:wrap;">
+            <div style="max-width:760px;">
+              <div class="section-kicker">Welcome back</div>
+              <h2 class="section-title" style="margin-top:10px; font-size:clamp(2rem, 4vw, 3rem);">Your TrustScan workspace is ready.</h2>
+              <p class="section-lead" style="margin-top:12px;">
+                Upload, review, and expand your product from a polished frontend now — then wire in backend scanning, authentication, and analytics later.
+              </p>
+            </div>
+
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <button class="btn btn-brand">Upload & Scan Image</button>
+              <button class="btn btn-dark">Scan Video Stream</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="stat-grid animate-fade-up">
+          <div class="stat-box">
+            <div class="small">Scans Remaining</div>
+            <div class="big">19,850</div>
+            <div class="hint" style="color:#4f46e5;">Professional Plan</div>
+          </div>
+          <div class="stat-box">
+            <div class="small">Last 30 Days</div>
+            <div class="big">1,245</div>
+            <div class="hint" style="color:#059669;">Credits Used</div>
+          </div>
+          <div class="stat-box">
+            <div class="small">Risk Flag Rate</div>
+            <div class="big">12.8%</div>
+            <div class="hint" style="color:#e11d48;">Suspicious items</div>
+          </div>
+          <div class="stat-box">
+            <div class="small">API Status</div>
+            <div class="big">Ready</div>
+            <div class="hint" style="color:#0284c7;">Future backend</div>
+          </div>
+        </section>
+
+        <section class="grid-2 animate-fade-up">
+          <div class="dash-card">
+            <div style="display:flex; justify-content:space-between; gap:16px; align-items:flex-start;">
+              <div>
+                <h3 style="font-size:1.2rem;">Quick Analysis Panel</h3>
+                <p style="margin-top:8px;">A premium placeholder for the upload and model scan experience.</p>
+              </div>
+              <span class="badge brand">Live</span>
+            </div>
+
+            <div style="margin-top:18px; border-radius:24px; background:linear-gradient(135deg,#eef2ff,#f8fafc); border:1px dashed #c7d2fe; padding:20px;">
+              <div style="display:grid; gap:12px;">
+                <div style="display:flex; justify-content:space-between; gap:10px;">
+                  <strong>Analysis confidence</strong>
+                  <span style="color:#4f46e5; font-weight:900;">98.2%</span>
+                </div>
+                <div class="progress" style="background:#e2e8f0;"><span></span></div>
+                <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;">
+                  <span class="badge red">AI Generated</span>
+                  <span class="badge blue">Heatmap found</span>
+                  <span class="badge green">API ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dash-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:16px;">
+              <div>
+                <h3 style="font-size:1.2rem;">Active API Key</h3>
+                <p style="margin-top:8px;">This is a UI placeholder for your auth and API key system.</p>
+              </div>
+              <span class="badge green">Enabled</span>
+            </div>
+
+            <div class="api-row" style="margin-top:20px;">
+              <code id="active-api-key-string" class="code-line">sk_ts_prod_12a3b4c5d6e7f8g9h0i1j2k3l</code>
+              <button data-action="copy-api-key" class="btn btn-soft" style="padding:10px 14px; border:1px solid #e2e8f0; background:#fff; color:#4f46e5;">Copy</button>
+            </div>
+
+            <button class="btn btn-dark" style="width:100%; margin-top:14px;">Generate New Key</button>
+          </div>
+        </section>
+
+        <section id="scan-history" class="dash-card animate-fade-up">
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:12px;">
+            <div>
+              <h3 style="font-size:1.2rem;">Recent Scans</h3>
+              <p style="margin-top:8px;">Live preview of recent activity on your platform.</p>
+            </div>
+            <span class="badge" style="background:#f1f5f9; color:#475569;">Live preview</span>
+          </div>
+
+          <div id="recent-scan-feed" class="scan-list">
+            <div id="scan-history-empty" style="border:1px dashed #cbd5e1; background:#f8fafc; border-radius:18px; padding:30px; text-align:center; color:#64748b;">
+              No recent scans to display yet.
+            </div>
+          </div>
+        </section>
+
+        <section id="billing" class="dash-card animate-fade-up">
+          <div style="display:flex; justify-content:space-between; gap:16px; align-items:center; flex-wrap:wrap;">
+            <div>
+              <h3 style="font-size:1.2rem;">Billing & Subscription</h3>
+              <p style="margin-top:8px;">This area is ready for Stripe, plans, invoices, and usage-based billing later.</p>
+            </div>
+            <button class="btn btn-soft" style="color:#0f172a; border:1px solid #e2e8f0; background:#fff;">Manage Plan</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>

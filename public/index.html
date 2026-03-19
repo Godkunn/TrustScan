@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container-page navbar">
-      <a href="/" class="brand">
-        <img src="/assets/logo.png" alt="TrustScan logo" />
+      <a href="./index.html" class="brand">
+        <img src="./assets/logo.png" alt="TrustScan logo" />
         <div class="brand-text">
           <div class="brand-title" style="color:#fff;">TrustScan</div>
           <div class="brand-subtitle">AI Image & Deepfake Detection</div>
@@ -26,13 +26,13 @@
         <a href="#workflow">Workflow</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
-        <a href="/contact.html">Contact</a>
+        <a href="./contact.html">Contact</a>
       </nav>
 
       <div class="nav-actions">
-        <button id="nav-signin" class="btn btn-soft hide-mobile">Sign In</button>
-        <a href="/dashboard.html" class="btn btn-primary hide-mobile">Open Dashboard</a>
-        <button id="mobile-menu-button" class="menu-toggle" aria-label="Open menu">☰</button>
+        <button type="button" id="nav-signin" class="btn btn-soft hide-mobile">Sign In</button>
+        <a href="./dashboard.html" class="btn btn-primary hide-mobile">Open Dashboard</a>
+        <button type="button" id="mobile-menu-button" class="menu-toggle" aria-label="Open menu">☰</button>
       </div>
     </div>
 
@@ -42,9 +42,9 @@
         <a class="btn btn-soft" href="#workflow">Workflow</a>
         <a class="btn btn-soft" href="#pricing">Pricing</a>
         <a class="btn btn-soft" href="#faq">FAQ</a>
-        <a class="btn btn-soft" href="/contact.html">Contact</a>
-        <button id="mobile-signin" class="btn btn-soft">Sign In</button>
-        <a href="/dashboard.html" class="btn btn-primary">Open Dashboard</a>
+        <a class="btn btn-soft" href="./contact.html">Contact</a>
+        <button type="button" id="mobile-signin" class="btn btn-soft">Sign In</button>
+        <a href="./dashboard.html" class="btn btn-primary">Open Dashboard</a>
       </div>
     </div>
   </header>
@@ -73,8 +73,8 @@
           </p>
 
           <div class="hero-cta">
-            <button id="analyze-btn" class="btn btn-primary">Open Product Demo</button>
-            <button id="open-lead-cta" class="btn btn-outline">Join Waitlist</button>
+            <button type="button" id="analyze-btn" class="btn btn-primary" onclick="window.location.href='./contact.html'">Open Product Demo</button>
+            <button type="button" id="open-lead-cta" class="btn btn-outline">Join Waitlist</button>
           </div>
 
           <div class="hero-stats">
@@ -329,8 +329,8 @@
             The frontend is now structured for smooth backend integration, premium presentation, and fast future expansion.
           </p>
           <div class="hero-cta">
-            <a href="/dashboard.html" class="btn btn-primary">Open Dashboard</a>
-            <a href="/contact.html" class="btn btn-soft">Contact</a>
+            <a href="./dashboard.html" class="btn btn-primary">Open Dashboard</a>
+            <a href="./contact.html" class="btn btn-soft">Contact</a>
           </div>
         </div>
       </div>
@@ -340,13 +340,13 @@
   <footer class="footer">
     <div class="container-page footer-row">
       <div class="brand">
-        <img src="/assets/logo.png" alt="TrustScan logo" style="width:34px; height:34px; border-radius:12px;" />
+        <img src="./assets/logo.png" alt="TrustScan logo" style="width:34px; height:34px; border-radius:12px;" />
         <div style="color:#334155; font-weight:700;">© 2026 TrustScan. All rights reserved.</div>
       </div>
       <div class="footer-links">
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
-        <a href="/contact.html">Contact</a>
+        <a href="./contact.html">Contact</a>
       </div>
     </div>
   </footer>
@@ -355,16 +355,16 @@
     <div class="modal-card">
       <div class="modal-header">
         <div class="brand" style="align-items:flex-start;">
-          <img src="/assets/logo.png" alt="TrustScan logo" style="width:48px; height:48px; border-radius:16px; object-fit:contain;" />
+          <img src="./assets/logo.png" alt="TrustScan logo" style="width:48px; height:48px; border-radius:16px; object-fit:contain;" />
           <div>
             <h3 style="margin:0; font-size:1.8rem;">Join the TrustScan waitlist</h3>
             <p style="margin:8px 0 0; color:#cbd5e1;">Get updates for advanced detection features and API access.</p>
           </div>
         </div>
-        <button id="close-lead" class="close-btn" aria-label="Close">✕</button>
+        <button type="button" id="close-lead" class="close-btn" aria-label="Close">✕</button>
       </div>
 
-      <form id="subscribe-form" class="form-grid">
+      <form id="subscribe-form" class="form-grid" onsubmit="event.preventDefault(); alert('Subscribed! (Static Demo)'); document.getElementById('close-lead').click();">
         <div class="field">
           <label>Company Name</label>
           <input name="company_name" type="text" placeholder="Acme Inc." />
@@ -382,22 +382,22 @@
     <div class="modal-card" style="max-width:460px;">
       <div class="modal-header">
         <div class="brand" style="align-items:flex-start;">
-          <img src="/assets/logo.png" alt="TrustScan logo" style="width:48px; height:48px; border-radius:16px; object-fit:contain;" />
+          <img src="./assets/logo.png" alt="TrustScan logo" style="width:48px; height:48px; border-radius:16px; object-fit:contain;" />
           <div>
             <h3 style="margin:0; font-size:1.8rem;">Sign in to TrustScan</h3>
             <p style="margin:8px 0 0; color:#cbd5e1;">Access your dashboard and scan history.</p>
           </div>
         </div>
-        <button id="close-login" class="close-btn" aria-label="Close">✕</button>
+        <button type="button" id="close-login" class="close-btn" aria-label="Close">✕</button>
       </div>
 
       <div class="form-grid">
-        <button id="mock-google-login" class="btn btn-primary" style="width:100%; border-radius:18px;">Sign in with Google (demo)</button>
-        <button class="btn btn-soft" style="width:100%; border-radius:18px;">More sign in options</button>
+        <button type="button" id="mock-google-login" class="btn btn-primary" style="width:100%; border-radius:18px;" onclick="window.location.href='./dashboard.html'">Sign in with Google (demo)</button>
+        <button type="button" class="btn btn-soft" style="width:100%; border-radius:18px;">More sign in options</button>
       </div>
     </div>
   </div>
 
-  <script src="/js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

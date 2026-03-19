@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container-page navbar">
-      <a href="/" class="brand">
-        <img src="/assets/logo.png" alt="TrustScan logo" />
+      <a href="./index.html" class="brand">
+        <img src="./assets/logo.png" alt="TrustScan logo" />
         <div class="brand-text">
           <div class="brand-title" style="color:#0f172a;">TrustScan</div>
           <div class="brand-subtitle" style="color:#64748b;">AI Image & Deepfake Detection</div>
@@ -22,14 +22,14 @@
       </a>
 
       <nav class="nav-links" style="color:#475569;">
-        <a href="/#features">Solutions</a>
-        <a href="/#pricing">Pricing</a>
-        <a href="/dashboard.html">Dashboard</a>
+        <a href="./index.html#features">Solutions</a>
+        <a href="./index.html#pricing">Pricing</a>
+        <a href="./dashboard.html">Dashboard</a>
       </nav>
 
       <div class="nav-actions">
-        <a href="/dashboard.html" class="btn btn-soft" style="border-color:#e2e8f0; color:#0f172a; background:#fff;">Dashboard</a>
-        <a href="/" class="btn btn-brand">Home</a>
+        <a href="./dashboard.html" class="btn btn-soft" style="border-color:#e2e8f0; color:#0f172a; background:#fff;">Dashboard</a>
+        <a href="./index.html" class="btn btn-brand">Home</a>
       </div>
     </div>
   </header>
@@ -71,7 +71,7 @@
         <h2 style="font-size:2rem; margin:0;">Contact us</h2>
         <p style="margin-top:10px;">Send your use case, and later you can wire this form to your backend with zero redesign.</p>
 
-        <form class="form-grid" style="margin-top:24px;">
+        <form class="form-grid" style="margin-top:24px;" onsubmit="event.preventDefault(); alert('Demo request submitted! (Static Demo)');">
           <div class="grid-2">
             <div class="field">
               <label style="color:#64748b;">Name</label>
@@ -120,7 +120,7 @@
 
           <div class="field">
             <label style="color:#64748b;">Use case *</label>
-            <textarea rows="5" placeholder="Tell us about your use case, industry, and what you need..." style="color:#0f172a; background:#f8fafc; border:1px solid #e2e8f0;"></textarea>
+            <textarea rows="5" placeholder="Tell us about your use case, industry, and what you need..." style="color:#0f172a; background:#f8fafc; border:1px solid #e2e8f0;" required></textarea>
           </div>
 
           <button type="submit" class="btn btn-brand" style="width:100%; border-radius:18px; padding:14px 18px;">Send Message</button>
@@ -132,13 +132,13 @@
   <footer class="footer">
     <div class="container-page footer-row">
       <div class="brand">
-        <img src="/assets/logo.png" alt="TrustScan logo" style="width:34px; height:34px; border-radius:12px;" />
+        <img src="./assets/logo.png" alt="TrustScan logo" style="width:34px; height:34px; border-radius:12px;" />
         <div style="color:#334155; font-weight:700;">© 2026 TrustScan. All rights reserved.</div>
       </div>
       <div class="footer-links">
-        <a href="/">Home</a>
-        <a href="/dashboard.html">Dashboard</a>
-        <a href="/#pricing">Pricing</a>
+        <a href="./index.html">Home</a>
+        <a href="./dashboard.html">Dashboard</a>
+        <a href="./index.html#pricing">Pricing</a>
       </div>
     </div>
   </footer>
